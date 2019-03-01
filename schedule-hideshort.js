@@ -35,7 +35,7 @@
 
           const events = document.querySelectorAll('.calendar-option');
           const screenings = document.querySelectorAll('.movies-wrapper');
-
+            //Detect which event is clicked on the schedule page
             switch (eventChosen) {
               //if first screening is chosen
               case "event-1":
