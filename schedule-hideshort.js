@@ -24,11 +24,11 @@
           const show = (e) => {
             e.style.display = 'block'
           };
-          //Change background to black on schedule buttons after pressing
+          //Change background to black on active schedule buttons
           const darkBackground = (e) => {
             e.style.backgroundColor = "#000000";
           };
-          //Change background to gray on incative schedule buttons
+          //Change background back to gray on inactive schedule buttons
           const lightBackground = (e) => {
             e.style.backgroundColor = "#666666";
           };
@@ -125,7 +125,3 @@
             }
         });
       }
-
-
-
-
