@@ -9,11 +9,10 @@
         });
       }
       /*Program Calendar Toggle movies schedule by event day.*/
-      var scheduleButtons = document.getElementsByClassName("calendar-option");
-      var i;
+      var scheduleButtons = document.querySelectorAll('.calendar-option');
 
-      for (i = 0; i < scheduleButtons.length; i++) {
-        scheduleButtons[i].addEventListener("click", function() {
+      scheduleButtons.forEach(scheduleButton => {
+        scheduleButton.addEventListener("click", function() {
 
           var eventChosen = this.id;
           //hide scheduled movies by day
@@ -124,4 +123,4 @@
                     break;
             }
         });
-      }
+      });
